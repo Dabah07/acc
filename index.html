@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="max-w-screen-md mx-auto p-4 border bg-gray-100 text-center mt-20">
+        <h1>Total quantity: <span id="total-quantity" class="font-bold text-xl underline">0</span></h1>
+        <h1>Total price: <span id="total-price" class="font-bold text-xl underline">0</span></h1>
+    </div>
+    <div class="max-w-screen-md mx-auto grid grid-cols-3 gap-8 mt-8">
+        <!-- Begin Card -->
+        <div  class="border rounded-sm px-3 py-1 relative group product-card">
+            <img src="https://image.coastalreign.com/HOMEROOMT-SHIRTPHANTOMBLACK_0122_WEB_1671818871758.jpg" alt="">
+            <h3 class="text-sm text-slate-600 underline">Tshirt XL</h3>
+            <div class="flex justify-between">
+                <h4 class="font-bold text-xl underline"><span class="product-price">70</span> €</h4>
+                <p class="text-lg font-semibold"> <button class="bg-red-500 text-white py-0.5 px-3 rounded-full opacity-0 group-hover:opacity-100 transition minus-quantity-button">-</button> <span class="quantity" >0</span></p>
+            </div>
+            <button id="butt_1" class="bg-black text-white rounded-sm px-2 py-0.5 text-sm absolute top-1 left-1 opacity-0 group-hover:opacity-100 transition add-quantity-button">Add to cart</button>
+        </div>
+
+        <div id="2_cart" class="border rounded-sm px-3 py-1 relative group product-card">
+            <img src="https://timshop.timhortons.ca/cdn/shop/files/retro-logo-tshirt-back-1000px.png?v=1707853862&width=1000" alt="">
+            <h3 class="text-sm text-slate-600 underline">Tshirt Polo</h3>
+            <div class="flex justify-between">
+                <h4 class="font-bold text-xl underline"><span class="product-price">240</span> €</h4>
+                <p class="text-lg font-semibold"> <button class="bg-red-500 text-white py-0.5 px-3 rounded-full opacity-0 group-hover:opacity-100 transition minus-quantity-button">-</button> <span class="quantity" >0</span></p>
+            </div>
+            <button id="butt_2" class="bg-black text-white rounded-sm px-2 py-0.5 text-sm absolute top-1 left-1 opacity-0 group-hover:opacity-100 transition add-quantity-button">Add to cart</button>
+        </div>
+        
+
+        <div id="3_cart" class="border rounded-sm px-3 py-1 relative group product-card">
+            <img src="https://chriscross.in/cdn/shop/files/Chris_Cross_Royal_Blue_Tshirt.jpg?v=1723276250&width=2048" alt="">
+            <h3 class="text-sm text-slate-600 underline">Tshirt Oversize</h3>
+            <div class="flex justify-between">
+                <h4 class="font-bold text-xl underline"><span class="product-price">310</span> €</h4>
+                <p id="3butt" class="text-lg font-semibold"> <button class="bg-red-500 text-white py-0.5 px-3 rounded-full opacity-0 group-hover:opacity-100 transition minus-quantity-button">-</button> <span class="quantity" >0</span></p>
+            </div>
+            <button id="butt_3" class="bg-black text-white rounded-sm px-2 py-0.5 text-sm absolute top-1 left-1 opacity-0 group-hover:opacity-100 transition add-quantity-button">Add to cart</button>
+        </div>
+
+        <!-- End Card -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
